@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+ 
+ <h1 id="result"></h1> 
+<script>
+
+async function mult(x,y){
+    var res= await x*y;
+    fun1(res);
+}
+function fun1(product){
+    document.getElementById("result").innerHTML = product;
+}
+
+mult(2,5)
+</script>
+
+
+</body>
+</html>

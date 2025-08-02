@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+ 
+ <h1>Convert Javascript object into JSON string</h1>   
+<p id="result"></p>
+<script>
+
+var myobj={name:"Zainab", age:13, grade:7, address:"UAE" }
+var myJSON= JSON.stringify(myobj)
+var newobj=JSON.parse(myJSON)
+document.getElementById("result").innerHTML=newobj.address;
+
+</script>
+
+
+</body>
+</html>

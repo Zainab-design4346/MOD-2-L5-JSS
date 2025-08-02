@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+   
+<p>Enter any number from 1 to 100</p>   
+<input id="id1" type="number" min="1" max="100" required>
+<button onclick="f1()">Button</button>
+<p id="result"></p>
+
+<script>
+
+function f1()
+{
+    var input=document.getElementById("id1")
+    if(!input.checkValidity())
+{document.getElementById("result").innerHTML=input.ValidationMessage;}
+else{
+    document.getElementById("result").innerHTML="DONE"
+}
+}
+</script>
+</body>
+</html>
